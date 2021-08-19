@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '14'
+before_install:
+- npm install -g @angular/cli
+install: npm install
+branches:
+  only:
+  - master
+deploy:
+  provider: heroku
+  app: steams-store
+  api_key:
+    secure: iEnnEBdyUEfnHMqq21AerWRt2UGoIK+2OojPeyhxqxchEPFfQE965nVU3mWLaMA6DtZ+DuD1pBGdVFixtg5IKZFnpH1+XLGCg/zkoGPgPLVmkWdy6+mwxsH1E3/NdqvMzXAf+nwQ9qSW22f6Qka5fUmd0yg7/AwllY/jnUG25hBNXSNzEIg6zHaIOWAwU+m67lLgleMZa3D9eCbVjkv4i53J3Fo4amlLSqN1t46fAIQ/Y7LLO2cFOWmUbBPz/lk5plz3CYeF3Rf4TOMY2GcRLF3PmEvEBxnEXaahkpgrV91edFeRUfriUwDDYMlN+WNu1m2QTPwKXIi7KlsvbWQ9KwD5krXSt4KTYUX3zb3tqoJNW58m4ByRHxtwDcpHjMo2WPhfvFWyE/hJlL6nbj0Hl6KDt9aFZqhC1W01Vfewdn7lFvCZQpwZFpaK5ZE0YP1PKHnxDzNd3RAAtRra7MLKgJDGkYT5z5xYFiLCb+gCeHCnAL79g2Qwbe+iqHwSPbQSvknbS8QKFXKgJK+AVwp5nExi/cGEGvNyMos+knkEFlolcjJ5Yj9cMBAhqnZZTX28hpCejGsCxiuM4cfsP0SrBxQG74OP9oK2gjPpGhjjT8WIh7BKEmy7gZDdoMtbK8AI/AMqSCIYYhEn4H7sfAjnoE/J4OoxCUzDSzAc+Rua1Ho=
