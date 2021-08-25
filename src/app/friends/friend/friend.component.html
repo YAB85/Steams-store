@@ -1,0 +1,21 @@
+<div class="ui link items">
+  <div class="item" *ngFor="let user of users">
+    <div class="ui tiny image">
+      <img [src]="user.image" class="ui image">
+    </div>
+    <div class="content">
+      <div class="header">{{user.name}}</div>
+      <div class="description">
+        <p>{{user.surname}}</p>
+      </div>
+    </div>
+    <div>
+      <button class="ui primary button">
+        Save
+      </button>
+      <button class="ui red button">
+        Delete
+      </button>
+    </div>
+  </div>
+</div>

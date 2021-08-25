@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { GamesModule } from '../games/games.module';
+import { SharedModule } from '../shared/shared.module';
 import { LibraryRoutingModule } from './library-routing.module';
 import { LibraryHomeComponent } from './library-home/library-home.component';
 
@@ -11,7 +13,9 @@ import { LibraryHomeComponent } from './library-home/library-home.component';
   ],
   imports: [
     CommonModule,
-    LibraryRoutingModule
+    LibraryRoutingModule,
+    SharedModule,
+    GamesModule
   ],
   exports: []
 })
